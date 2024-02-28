@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Octagon Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="menu">
+        <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0;--clr: #228b22;">
+            <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;--clr: #000080;">
+            <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;--clr: #98FB98;">
+            <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;--clr: #008080;">
+            <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4;--clr: #00b0fe;">
+            <a href="#"><ion-icon name="key-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5;--clr: #191970;">
+            <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6;--clr: #a529ff;">
+            <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7;--clr: #b5f7e0;">
+            <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+        </li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let menu = document.querySelector('.menu');
+        menuToggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
